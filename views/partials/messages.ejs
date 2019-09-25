@@ -1,0 +1,22 @@
+<% if(typeof errors != 'undefined'){ %>
+    
+    <% errors.forEach(function(error) { %>
+      <h4 class='btn'><%= error.msg %></h4>
+
+    <% }); %> 
+    
+    <% } %> 
+<!--success-->
+    <% if(success_msg != ''){ %>
+      <h4 class='btn'><%= success_msg %></h4>
+    <% } %>
+
+<!--error msg-->
+    <% if(error_msg != ''){ %>
+    <h4 class='btn'><%= error_msg %></h4>
+      <% } %>
+
+      <!--error-->
+      <% if(error != ''){ %>
+        <h4 class='btn'><%= error %></h4>
+        <% } %>
